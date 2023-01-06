@@ -15,7 +15,7 @@ import { TradingLimits } from "./common/TradingLimits.sol";
 
 /**
  * @title Broker
- * @notice The broker executes swaps and keeps track of spending limits per pair.
+ * @notice The broker executes swaps and keeps track of spending limits.
  */
 contract Broker is IBroker, IBrokerAdmin, Initializable, Ownable {
   using TradingLimits for TradingLimits.State;
